@@ -1,0 +1,33 @@
+{
+  "name": "a04-noebrown",
+  "version": "1.0.0",
+  "description": "assignment 4 COMP426",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a04-noebrown.git"
+  },
+  "keywords": [
+      "web",
+      "server",
+      "port",
+      "node",
+      "fs",
+      "args",
+      "http"
+  ],
+  "author": "noebrown",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a04-noebrown/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a04-noebrown#readme"
+  "dependencies": {
+    "express": "^4.18.2",
+    "minimist": "^1.2.7"
+  },
+  "type": "module"
+}
