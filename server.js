@@ -14,38 +14,38 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.get('/app/', function (req, res) {
-    res.status(200).send('200 OK');
+    res.send('200 OK');
 })
 
 app.get('/app/roll/', function (req, res) {
-    res.status(200).send(roll(6, 2, 1));
+    res.send(roll(6, 2, 1));
 })
 
 app.get('/app/roll/*/', function (req, res) {
     let url = req.url;
     let myArray = url.split("/");
-    res.status(200).send(roll(myArray[3], 2, 1))
+    res.send(roll(myArray[3], 2, 1))
 })
 
 app.get('/app/roll/*/*/', function (req, res) {
     let url = req.url;
     let myArray = url.split("/");
-    res.status(200).send(roll(myArray[3], myArray[4], 1))
+    res.send(roll(myArray[3], myArray[4], 1))
 })
 
 app.get('/app/roll/*/*/*/', function (req, res) {
     let url = req.url;
     let myArray = url.split("/");
-    res.status(200).send(roll(myArray[3], myArray[4], myArray[5]))
+    res.send(roll(myArray[3], myArray[4], myArray[5]))
 })
 
 
 app.get('*', function (req, res) {
-    res.status(200).send('404 NOT FOUND');
+    res.send('404 NOT FOUND');
 })
 
 app.post('/app/roll/', function(req, res) {
-    res.status(200).send(roll(req.body.sides, req.body.dice, req.body.rolls));
+    res.send(roll(req.body.sides, req.body.dice, req.body.rolls));
 });
 
 app.listen(port, () => {
@@ -53,10 +53,13 @@ app.listen(port, () => {
 })
 
 /*
- tester
+ testers
  app.get('/', function (req, res) {
  res.send('Hello World')
+ 
+ app.get('/app/', function (req, res) {
+     res.send('200 OK');
+ })
  })
 */
-
 
