@@ -12,10 +12,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // parsing
-app.get('/', function (req, res) {
-    res.send('Hello')
-})
-
 app.get('/app/', function (req, res) {
     res.send('200 OK');
 })
