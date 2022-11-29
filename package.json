@@ -6,10 +6,6 @@
   "scripts": {
     "test": "node server.js --port=5555"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/comp426-2022-fall/a04-noebrown.git"
-  },
   "keywords": [
       "web",
       "server",
@@ -19,6 +15,10 @@
       "args",
       "http"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a04-noebrown.git"
+  },
   "author": "noebrown",
   "license": "GPL-3.0-or-later",
   "bugs": {
