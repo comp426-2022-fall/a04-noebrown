@@ -8,11 +8,14 @@ const app = express()
 const args = minimist(process.argv.slice(2));
 const port = args.port || 5000
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // parsing
+app.get('/', function (req, res) {
+    res.send('Hello')
+})
+
 app.get('/app/', function (req, res) {
     res.send('200 OK');
 })
@@ -53,7 +56,7 @@ app.listen(port)
 /*
  testers
  app.get('/', function (req, res) {
- res.send('Hello World')
+ res.send('Hello')
  
  app.get('/app/', function (req, res) {
      res.send('200 OK');
